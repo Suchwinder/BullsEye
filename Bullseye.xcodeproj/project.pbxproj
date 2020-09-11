@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174ADBA2250BE1090031E96B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADBA1250BE1090031E96B /* AboutViewController.swift */; };
+		174ADBA4250BE61A0031E96B /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = 174ADBA3250BE61A0031E96B /* Bullseye.html */; };
+		174ADBA7250BE6A70031E96B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174ADBA6250BE6A70031E96B /* WebKit.framework */; };
 		17D66EDA24FD7B74007F1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D66ED924FD7B74007F1689 /* AppDelegate.swift */; };
 		17D66EDC24FD7B74007F1689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D66EDB24FD7B74007F1689 /* SceneDelegate.swift */; };
 		17D66EDE24FD7B74007F1689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D66EDD24FD7B74007F1689 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174ADBA1250BE1090031E96B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		174ADBA3250BE61A0031E96B /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Bullseye.html; path = "../../11th semester (FINAL)/Courses/IOS Dev/iOS_Apprentice_souce_code_v8.2.1/19-getting-started-uikit/Resources/Bullseye.html"; sourceTree = "<group>"; };
+		174ADBA6250BE6A70031E96B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		17D66ED624FD7B74007F1689 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D66ED924FD7B74007F1689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D66EDB24FD7B74007F1689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174ADBA7250BE6A70031E96B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174ADBA5250BE6A70031E96B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				174ADBA6250BE6A70031E96B /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		17D66ECD24FD7B74007F1689 = {
 			isa = PBXGroup;
 			children = (
 				17D66ED824FD7B74007F1689 /* Bullseye */,
 				17D66ED724FD7B74007F1689 /* Products */,
+				174ADBA5250BE6A70031E96B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +72,12 @@
 		17D66ED824FD7B74007F1689 /* Bullseye */ = {
 			isa = PBXGroup;
 			children = (
+				174ADBA3250BE61A0031E96B /* Bullseye.html */,
 				17D66ED924FD7B74007F1689 /* AppDelegate.swift */,
 				17D66EDB24FD7B74007F1689 /* SceneDelegate.swift */,
 				17D66EDD24FD7B74007F1689 /* ViewController.swift */,
 				17D66EDF24FD7B74007F1689 /* Main.storyboard */,
+				174ADBA1250BE1090031E96B /* AboutViewController.swift */,
 				17D66EE224FD7B77007F1689 /* Assets.xcassets */,
 				17D66EE424FD7B77007F1689 /* LaunchScreen.storyboard */,
 				17D66EE724FD7B77007F1689 /* Info.plist */,
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D66EE624FD7B77007F1689 /* LaunchScreen.storyboard in Resources */,
+				174ADBA4250BE61A0031E96B /* Bullseye.html in Resources */,
 				17D66EE324FD7B77007F1689 /* Assets.xcassets in Resources */,
 				17D66EE124FD7B74007F1689 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +159,7 @@
 			files = (
 				17D66EDE24FD7B74007F1689 /* ViewController.swift in Sources */,
 				17D66EDA24FD7B74007F1689 /* AppDelegate.swift in Sources */,
+				174ADBA2250BE1090031E96B /* AboutViewController.swift in Sources */,
 				17D66EDC24FD7B74007F1689 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
