@@ -10,6 +10,7 @@
 		174ADBA2250BE1090031E96B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADBA1250BE1090031E96B /* AboutViewController.swift */; };
 		174ADBA4250BE61A0031E96B /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = 174ADBA3250BE61A0031E96B /* Bullseye.html */; };
 		174ADBA7250BE6A70031E96B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174ADBA6250BE6A70031E96B /* WebKit.framework */; };
+		174ADBA9250CFAD00031E96B /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADBA8250CFAD00031E96B /* HighScoresViewController.swift */; };
 		17D66EDA24FD7B74007F1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D66ED924FD7B74007F1689 /* AppDelegate.swift */; };
 		17D66EDC24FD7B74007F1689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D66EDB24FD7B74007F1689 /* SceneDelegate.swift */; };
 		17D66EDE24FD7B74007F1689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D66EDD24FD7B74007F1689 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		174ADBA1250BE1090031E96B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		174ADBA3250BE61A0031E96B /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Bullseye.html; path = "../../11th semester (FINAL)/Courses/IOS Dev/iOS_Apprentice_souce_code_v8.2.1/19-getting-started-uikit/Resources/Bullseye.html"; sourceTree = "<group>"; };
 		174ADBA6250BE6A70031E96B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		174ADBA8250CFAD00031E96B /* HighScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
 		17D66ED624FD7B74007F1689 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D66ED924FD7B74007F1689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D66EDB24FD7B74007F1689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				17D66EDB24FD7B74007F1689 /* SceneDelegate.swift */,
 				17D66EDD24FD7B74007F1689 /* ViewController.swift */,
 				17D66EDF24FD7B74007F1689 /* Main.storyboard */,
+				174ADBA8250CFAD00031E96B /* HighScoresViewController.swift */,
 				174ADBA1250BE1090031E96B /* AboutViewController.swift */,
 				17D66EE224FD7B77007F1689 /* Assets.xcassets */,
 				17D66EE424FD7B77007F1689 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174ADBA9250CFAD00031E96B /* HighScoresViewController.swift in Sources */,
 				17D66EDE24FD7B74007F1689 /* ViewController.swift in Sources */,
 				17D66EDA24FD7B74007F1689 /* AppDelegate.swift in Sources */,
 				174ADBA2250BE1090031E96B /* AboutViewController.swift in Sources */,
