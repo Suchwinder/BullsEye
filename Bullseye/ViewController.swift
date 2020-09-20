@@ -92,9 +92,25 @@ class ViewController: UIViewController {
     }
     
     func startNewGame() {
+        addHighScore(score)
         score = 0
         round = 0
         startNewRound()
+    }
+    
+    func addHighScore(_ score: Int) {
+        guard score > 0 else {
+            return;
+        }
+        
+        let highscore = HighScoreItem()
+        highscore.score = score
+        highscore.name = "Unkown"
+        
+        var highScores = PersistencyHelper.loadHighScores()
+        highScores.append(highscore)
+        highScores.sort {$0.score > $1.score}
+        PersistencyHelper.saveHighScores(highScores)
     }
 }
 

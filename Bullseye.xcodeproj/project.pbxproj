@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1725916E2516E43300FA4558 /* PersistencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725916D2516E43300FA4558 /* PersistencyHelper.swift */; };
 		17429C7225154D1B001C8E15 /* HighScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17429C7125154D1B001C8E15 /* HighScoreItem.swift */; };
 		174ADBA2250BE1090031E96B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADBA1250BE1090031E96B /* AboutViewController.swift */; };
 		174ADBA4250BE61A0031E96B /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = 174ADBA3250BE61A0031E96B /* Bullseye.html */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1725916D2516E43300FA4558 /* PersistencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyHelper.swift; sourceTree = "<group>"; };
 		17429C7125154D1B001C8E15 /* HighScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreItem.swift; sourceTree = "<group>"; };
 		174ADBA1250BE1090031E96B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		174ADBA3250BE61A0031E96B /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Bullseye.html; path = "../../11th semester (FINAL)/Courses/IOS Dev/iOS_Apprentice_souce_code_v8.2.1/19-getting-started-uikit/Resources/Bullseye.html"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				17D66EE424FD7B77007F1689 /* LaunchScreen.storyboard */,
 				17D66EE724FD7B77007F1689 /* Info.plist */,
 				17429C7125154D1B001C8E15 /* HighScoreItem.swift */,
+				1725916D2516E43300FA4558 /* PersistencyHelper.swift */,
 			);
 			path = Bullseye;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				174ADBA9250CFAD00031E96B /* HighScoresViewController.swift in Sources */,
 				17429C7225154D1B001C8E15 /* HighScoreItem.swift in Sources */,
+				1725916E2516E43300FA4558 /* PersistencyHelper.swift in Sources */,
 				17D66EDE24FD7B74007F1689 /* ViewController.swift in Sources */,
 				17D66EDA24FD7B74007F1689 /* AppDelegate.swift in Sources */,
 				174ADBA2250BE1090031E96B /* AboutViewController.swift in Sources */,
