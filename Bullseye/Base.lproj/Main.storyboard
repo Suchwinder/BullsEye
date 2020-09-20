@@ -196,6 +196,47 @@
             </objects>
             <point key="canvasLocation" x="876.61169415292363" y="365.60000000000002"/>
         </scene>
+        <!--Edit High Score-->
+        <scene sceneID="J6L-Ju-AWv">
+            <objects>
+                <tableViewController id="obw-Mb-th4" customClass="EditHighScoreViewController" customModule="Bullseye" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1z5-qq-JSq">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="z53-o1-Xwq">
+                                <rect key="frame" x="0.0" y="28" width="667" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z53-o1-Xwq" id="v6h-zQ-Lug">
+                                    <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="obw-Mb-th4" id="Zhm-aj-bmC"/>
+                            <outlet property="delegate" destination="obw-Mb-th4" id="eBc-Vl-wv5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Edit High Score" id="Ku5-z1-3rp">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Xel-9Q-r9Z">
+                            <connections>
+                                <action selector="cancel" destination="obw-Mb-th4" id="lq6-fN-0Bb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="nlw-9b-PgF">
+                            <connections>
+                                <action selector="done" destination="obw-Mb-th4" id="DiA-J7-k6j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6O3-lr-yxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="-374"/>
+        </scene>
         <!--High Scores-->
         <scene sceneID="sen-5L-SNb">
             <objects>
@@ -239,6 +280,9 @@
                                         <constraint firstAttribute="trailing" secondItem="Xd0-OC-J21" secondAttribute="trailing" constant="20" id="m9Z-Xs-dMx"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="obw-Mb-th4" kind="show" trigger="accessoryAction" id="cs2-TR-3FV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
