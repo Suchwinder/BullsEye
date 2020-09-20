@@ -281,7 +281,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="obw-Mb-th4" kind="show" trigger="accessoryAction" id="cs2-TR-3FV"/>
+                                    <segue destination="obw-Mb-th4" kind="show" trigger="accessoryAction" id="f0w-dB-Jma"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
