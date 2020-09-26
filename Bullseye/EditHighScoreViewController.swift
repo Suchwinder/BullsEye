@@ -8,11 +8,19 @@
 
 import UIKit
 
-class EditHighScoreViewController: UITableViewController {
+protocol EditHighScoreViewControllerDelegate: class {
+    func editHighScoreViewControllerDidCancel(_ controller: EditHighScoreViewController)
+    func editHighScoreViewController(_ controller: EditHighScoreViewController,
+                                     didFinishEditing item: HighScoreItem)
+}
 
+class EditHighScoreViewController: UITableViewController, UITextFieldDelegate {
+    weak var delegate: EditHighScoreViewControllerDelegate?
+    var highScoreItem: HighScoreItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textField.text = highScoreItem.name
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,13 +30,12 @@ class EditHighScoreViewController: UITableViewController {
     
     //MARK:- Actions
     @IBAction func cancel() {
-        navigationController?.popViewController(animated: true)
+        delegate?.editHighScoreViewControllerDidCancel(self)
     }
     
     @IBAction func done() {
-        print("Contents of the text field: \(textField.text!)")
-        
-        navigationController?.popViewController(animated: true)
+        highScoreItem.name = textField.text!
+        delegate?.editHighScoreViewController(self, didFinishEditing: highScoreItem)
     }
     
     @IBOutlet weak var textField: UITextField!
@@ -39,11 +46,27 @@ class EditHighScoreViewController: UITableViewController {
         return nil
     }
     
+    
+    @IBOutlet weak var doneBarButton: UIBarButtonItem!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textField.becomeFirstResponder()
     }
 
+    //MARK: - Text Field Delegates
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        let oldText = textField.text!
+        let stringRange = Range(range, in: oldText)!
+        let newText = oldText.replacingCharacters(in: stringRange, with: string)
+        
+        doneBarButton.isEnabled = !newText.isEmpty
+        
+        return true
+    }
+    
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
